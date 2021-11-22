@@ -1,5 +1,19 @@
 const inquirer = require("inquirer");
 const questions = require("./lib/questions");
+const mysql = require("mysql2");
+
+const connection = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "",
+  database: "employees_db",
+});
+
+connection.connect(function (err) {
+  if (err) throw err;
+  // run the start function after the connection is made to prompt the user
+  promptUser();
+});
 
 const promptUser = () => {
   inquirer.prompt(questions).then((res) => {
@@ -46,7 +60,7 @@ const promptUser = () => {
   });
 };
 
-promptUser();
+// promptUser();
 
 module.exports = { promptUser };
 const { quit } = require("./utils/index");
