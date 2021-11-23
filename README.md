@@ -4,7 +4,7 @@
 
 ## Description
 
-An application that allows business owners to view and manage employees, roles, and departments within their company.
+This application allows business owners to manage employees, departments, and  roles  within working in their company.
 
 ## Contents
 
@@ -33,4 +33,4 @@ If you have any questions about the repo, please [open an issue](https://github.
 
 ### Video Demo
 
-[link to video] (link to video)
+[watch demo video] (https://youtu.be/tkfMWG4eOj8)
